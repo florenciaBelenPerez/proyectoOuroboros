@@ -98,21 +98,28 @@ font-family: 'Tai Heritage Pro', serif;
     }
   }
 
-.contenedor .logoDelProyecto{
-    grid-area: logoDelProyecto;
-    color: blueviolet;
-    animation-name: logo;
-    transition: all 3s ease-in-out;
-    /**grid-column: 2; **/
-}
 
-.logoDelProyecto:hover{
-    transform: rotate(1turn);
-    transform-origin: center center;
+.contenedor .logoDelProyecto img{
 
-
-}
-
+  grid-area: logoDelProyecto;
+  
+  color: blueviolet;
+  
+  animation-name: logo;
+  
+  transition: all 3s ease-in-out;
+  
+  /**grid-column: 2; **/
+  
+  }
+  
+  .logoDelProyecto img:hover{
+  
+  transform: rotate(1turn);
+  
+  transform-origin: center center;
+  
+  }
 
 
 .contenedor .sidebar{
