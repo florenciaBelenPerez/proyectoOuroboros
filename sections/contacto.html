@@ -18,28 +18,22 @@
         </header>
         <main>
             <article>
-                <form action="#"  class="formulario">
-                    <h2>Contacto</h2>
-                    Ingresar Nombre y Apellido
-                    <input type="text" placeholder="Nombre y Apellido"><br><br>
-                    <label for="email">Ingresar E-mail: <br>
-                        <input type="email" placeholder="ejemplo@gmail.com" name="email"><br>
-                </label><br>
-                    <label for="Aquí"> Dejanos tu mensaje o pregunta:
-                        <textarea placeholder="Aquí"></textarea>
-                    </label> <br>
-                    
-                    <div><p>Género:</p>
-                        <div>Masculino
-                            <input type="radio" name="género" value="masculino">
-                        </div>
-                        <div>Femenino
-                            <input type="radio" name="género" value="femenino">
-                        </div>
-                        <div>Prefiero no decirlo
-                            <input type="radio" name="género" value="sin género">
-                        </div>
-                    </div>
+
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Tu E-mail aquí</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Escribe tu mensaje aquí</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>Seleccioná tu género</option>
+                    <option value="1">Femenino</option>
+                    <option value="2">Masculino</option>
+                    <option value="3">Otro</option>
+                  </select>
+                  </article><br>
                     Rango etario
                     <select name="Edad" id="Edad"> 
                         <option value="0 a 35">0 a 35</option>
@@ -49,8 +43,7 @@
                     <br><br>
                     <div>¿Querés recibir info sobre nosotros?
                     <input type="checkbox" name="acepta" value="1"></div><br>
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Resetear">
+                    <button class="btn btn-primary" type="submit">Enviar mensaje</button>
                 </form>
             </article>
         </main>
