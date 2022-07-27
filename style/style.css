@@ -46,17 +46,11 @@ border-radius: 4px;
   font-weight: bold;
   color: white;
   background-color: #212529;
-}
-.contenedor .header ul li{
-  color: black;
-}
-.contenedor .header:hover{
-  color: #482D7A;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
 }
 
-.contenedor .header:visited{
-color: #482D7A;
-}
 
 .contenedor .contenido{
   grid-area: contenido;
@@ -124,7 +118,7 @@ transform-origin: center center;
   justify-content: center;
   display: flex;
   align-items: center;    
-  min-width: 100px;
+  min-width: 15px;
   font-family: 'Tai Heritage Pro', serif;
 }
 
@@ -271,7 +265,7 @@ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 
   align-items: center;
 }
 
-.tracking-in-expand {
+.derechos {
 	-webkit-animation: derechos 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 	        animation: derechos 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
