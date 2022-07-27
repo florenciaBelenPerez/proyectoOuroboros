@@ -6,7 +6,7 @@
 /** PALETA DE COLORES
 BLanco: white
 Blanco "Sucio" para fondo de section: #f1f1f1
-Negro: black
+Negro: ##212529
 Morado: #945CFA 
 Morado oscuro: #482D7A
 **/
@@ -25,6 +25,7 @@ font-family: 'Tai Heritage Pro', serif;
   grid-auto-rows: repeat(4, auto);
   gap: 20px;
   width: 90%;
+  color: #212529;
   max-width: 1280px;
   margin: 20px auto;
   grid-template-areas: "header header header header"
@@ -44,7 +45,7 @@ border-radius: 4px;
   font-family: 'Cinzel Decorative', cursive;
   font-size: 30px;
   font-weight: bold;
-  color: white;
+  color: #f1f1f1;
   background-color: #212529;
   text-decoration: none;
   display: flex;
@@ -146,7 +147,6 @@ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 
   justify-content: center;
   height: 800px;
 }
-
 
 /** FOOTER **/
 
@@ -294,28 +294,64 @@ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 
   }
 }
 
+/** SECTION DE CONTENIDO **/
+
+.contenedor .contenidoCajas{
+  grid-area: cajas;
+}
+
 /** MQ **/
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 992px){
 .contenedor ul li{
   color: white;
 }
 .contenedor{
   grid-template-areas: 
   "header"
-  "logoDelProyecto"
-  "contenido contenido"
-  "footer sidebar";
+  "sidebar"
+  "contenido"
+  "cajas"  
+  "footer";
+}
+.contenedor .header{
+  background-color: #f1f1f1;
+  text-decoration: none;
+  list-style-type: none;
 }
 img{
   align-items: center;
 }
 .contenedor .logoDelProyecto{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: none !important;
 }
 }
+
+@media screen and (min-width: 320px){
+  .contenedor ul li{
+    color: white;
+  }
+  .contenedor{
+    grid-template-areas: 
+    "header"
+    "sidebar"
+    "contenido"
+    "logoDelProyecto"  
+    "footer";
+  }
+  .contenedor .header{
+    background-color: #f1f1f1;
+    text-decoration: none;
+    list-style-type: none;
+  }
+  img{
+    align-items: center;
+  }
+  .contenedor .logoDelProyecto{
+    
+  }
+  
+  }
 
 h2{
   text-align: center;
