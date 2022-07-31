@@ -17,6 +17,28 @@
     justify-content: center;
   }
 }
+@media screen and (min-width: 600px) and (max-width: 992px) {
+  .contenedor .header {
+    grid-area: header;
+    font-family: "Cinzel Decorative", cursive;
+    font-weight: bold;
+    color: #212529;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  .contenedor .header {
+    grid-area: header;
+    font-family: "Cinzel Decorative", cursive;
+    font-weight: bold;
+    color: #212529;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+  }
+}
 @media screen and (min-width: 992px) {
   .contenedor {
     display: grid;
@@ -43,6 +65,90 @@
   .contenedor .logoDelProyecto img:hover {
     transform: rotate(1turn);
     transform-origin: center center;
+  }
+  .sidebar {
+    grid-area: sidebar;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    min-width: 15px;
+    font-family: "Tai Heritage Pro", serif;
+  }
+  .sidebar ul li {
+    text-decoration: none;
+    list-style: none;
+  }
+  h2 {
+    text-align: center;
+  }
+  .boton {
+    margin-top: 5px;
+  }
+  p {
+    font-family: "Playfair Display", serif;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 992px) {
+  .contenedor {
+    display: grid;
+    grid-template-columns: repeat(1 fr, 1fr);
+    grid-auto-rows: repeat(4, auto);
+    gap: 20px;
+    width: 90%;
+    color: #212529;
+    max-width: 1280px;
+    margin: 20px auto;
+    grid-template-areas: "header" "contenido" "sidebar" "footer";
+  }
+  .contenedor div, .header, .contenido, .sidebar, .footer {
+    padding: 20px;
+    border-radius: 4px;
+  }
+  .contenedor .logoDelProyecto img {
+    display: none;
+  }
+  .sidebar {
+    grid-area: sidebar;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    min-width: 15px;
+    font-family: "Tai Heritage Pro", serif;
+  }
+  .sidebar ul li {
+    text-decoration: none;
+    list-style: none;
+  }
+  h2 {
+    text-align: center;
+  }
+  .boton {
+    margin-top: 5px;
+  }
+  p {
+    font-family: "Playfair Display", serif;
+  }
+}
+@media screen and (max-width: 600px) {
+  .contenedor {
+    display: grid;
+    grid-template-columns: repeat(1 fr, 1fr);
+    grid-auto-rows: repeat(4, auto);
+    gap: 20px;
+    width: 90%;
+    color: #212529;
+    max-width: 1280px;
+    margin: 20px auto;
+    grid-template-areas: "header" "contenido" "sidebar" "footer";
+  }
+  .contenedor div, .header, .contenido, .sidebar, .footer {
+    padding: 20px;
+    border-radius: 4px;
+  }
+  .contenedor .logoDelProyecto img {
+    display: none;
   }
   .sidebar {
     grid-area: sidebar;
@@ -96,14 +202,37 @@
     }
   }
 }
-.contenido {
-  grid-area: contenido;
+@media screen and (min-width: 992px) {
+  .contenido {
+    grid-area: contenido;
+  }
 }
-
+@media screen and (min-width: 600px) and (max-width: 992px) {
+  .contenedor .contenido {
+    grid-area: contenido;
+  }
+}
+@media screen and (max-width: 600px) {
+  .contenedor .contenido {
+    grid-area: contenido;
+  }
+}
 @media screen and (min-width: 992px) {
   article {
     background-color: #212529;
-    color: white;
+    color: #f1f1f1;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 992px) {
+  article {
+    background-color: #212529;
+    color: #f1f1f1;
+  }
+}
+@media screen and (max-width: 600px) {
+  article {
+    background-color: #212529;
+    color: #f1f1f1;
   }
 }
 @media screen and (min-width: 992px) {
@@ -116,6 +245,29 @@
     align-items: center;
     justify-content: center;
     height: auto;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 992px) {
+  .contenedor .sigil {
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgb(238, 174, 202) 0%, rgb(148, 187, 233) 100%);
+  }
+  .sigilGenerator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  .contenedor .sigil {
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgb(238, 174, 202) 0%, rgb(148, 187, 233) 100%);
+  }
+  .sigilGenerator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
   }
 }
 @media screen and (min-width: 992px) {
@@ -253,6 +405,28 @@
     100% {
       opacity: 1;
     }
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 992px) {
+  .footer {
+    grid-area: footer;
+    padding-left: 45px;
+    color: #212529;
+    font-family: "Tai Heritage Pro", serif;
+  }
+  .footer .derechos {
+    font-size: small;
+  }
+}
+@media screen and (max-width: 600px) {
+  .footer {
+    grid-area: footer;
+    padding-left: 45px;
+    color: #212529;
+    font-family: "Tai Heritage Pro", serif;
+  }
+  .footer .derechos {
+    font-size: small;
   }
 }
 

@@ -12,3 +12,28 @@
     justify-content: center;
 }
   }
+  @media screen and (min-width: 600px) and (max-width: 992px){
+    .contenedor .header{
+    grid-area: header;
+    font-family: $font-logo;
+    
+    font-weight: bold;
+    color: $negro;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .contenedor .header{
+  grid-area: header;
+  font-family: $font-logo;
+  
+  font-weight: bold;
+  color: $negro;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+}

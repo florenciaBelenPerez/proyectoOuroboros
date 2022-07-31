@@ -1,6 +1,18 @@
 @media screen and (min-width: 992px){
     article{
-    background-color: #212529;
-    color: white;
+    background-color: $negro;
+    color: $blanco;
   }
+}
+@media screen and (min-width: 600px) and (max-width: 992px){
+    article{
+        background-color: $negro;
+        color: $blanco;
+      }
+}
+@media screen and (max-width: 600px){
+    article{
+        background-color: $negro;
+        color: $blanco;
+      }
 }

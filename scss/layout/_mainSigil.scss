@@ -10,3 +10,29 @@
     height: auto;
   }
 }
+@media screen and (min-width: 600px) and (max-width: 992px){
+  .contenedor .sigil{
+    background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  }
+
+  .sigilGenerator{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  
+}
+@media screen and (max-width: 600px){
+  .contenedor .sigil{
+    background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  }
+  .sigilGenerator{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+  }
+}

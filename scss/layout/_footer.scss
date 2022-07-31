@@ -3,7 +3,7 @@
         grid-area: footer;
         padding-left: 45px;
         color: black;
-        font-family: 'Tai Heritage Pro', serif;
+        font-family: $font-footer
       }
       
       .fb:hover{
@@ -142,4 +142,27 @@
           opacity: 1;
         }
       }
+}
+@media screen and (min-width: 600px) and (max-width: 992px){
+        .footer{
+         grid-area: footer;
+          padding-left: 45px;
+         color: $negro;
+         font-family: $font-footer;
+       .derechos{
+         font-size: small;
+}
+}
+}
+@media screen and (max-width: 600px){
+  .footer{
+    grid-area: footer;
+    padding-left: 45px;
+    color: $negro;
+    font-family: $font-footer;
+  
+   .derechos{
+    font-size: small;
+  }
+}
 }
