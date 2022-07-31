@@ -1,0 +1,145 @@
+@media screen and (min-width: 992px){
+    .footer{
+        grid-area: footer;
+        padding-left: 45px;
+        color: black;
+        font-family: 'Tai Heritage Pro', serif;
+      }
+      
+      .fb:hover{
+        -webkit-animation: scale-down-top 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: scale-down-top 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+      
+      }
+      @-webkit-keyframes fb {
+        0% {
+          -webkit-transform: scale(1);
+                  transform: scale(1);
+          -webkit-transform-origin: 50% 0%;
+                  transform-origin: 50% 0%;
+        }
+        100% {
+          -webkit-transform: scale(0.5);
+                  transform: scale(0.5);
+          -webkit-transform-origin: 50% 0%;
+                  transform-origin: 50% 0%;
+        }
+      }
+      @keyframes scale-down-top {
+        0% {
+          -webkit-transform: scale(1);
+                  transform: scale(1);
+          -webkit-transform-origin: 50% 0%;
+                  transform-origin: 50% 0%;
+        }
+        100% {
+          -webkit-transform: scale(0.5);
+                  transform: scale(0.5);
+          -webkit-transform-origin: 50% 0%;
+                  transform-origin: 50% 0%;
+        }
+      }
+      
+      .tw:hover{
+        -webkit-animation: scale-down-top 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: scale-down-top 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+      
+      }
+      @-webkit-keyframes tw {
+        0% {
+          -webkit-transform: scale(1);
+                  transform: scale(1);
+          -webkit-transform-origin: 50% 0%;
+                  transform-origin: 50% 0%;
+        }
+        100% {
+          -webkit-transform: scale(0.5);
+                  transform: scale(0.5);
+          -webkit-transform-origin: 50% 0%;
+                  transform-origin: 50% 0%;
+        }
+      }
+      @keyframes scale-down-top {
+        0% {
+          -webkit-transform: scale(1);
+                  transform: scale(1);
+          -webkit-transform-origin: 50% 0%;
+                  transform-origin: 50% 0%;
+        }
+        100% {
+          -webkit-transform: scale(0.5);
+                  transform: scale(0.5);
+          -webkit-transform-origin: 50% 0%;
+                  transform-origin: 50% 0%;
+        }
+      }
+      
+      .yt:hover{
+        -webkit-animation: scale-down-top 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: scale-down-top 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+      
+      }
+      @-webkit-keyframes yt {
+        0% {
+          -webkit-transform: scale(1);
+                  transform: scale(1);
+          -webkit-transform-origin: 50% 0%;
+                  transform-origin: 50% 0%;
+        }
+        100% {
+          -webkit-transform: scale(0.5);
+                  transform: scale(0.5);
+          -webkit-transform-origin: 50% 0%;
+                  transform-origin: 50% 0%;
+        }
+      }
+      @keyframes scale-down-top {
+        0% {
+          -webkit-transform: scale(1);
+                  transform: scale(1);
+          -webkit-transform-origin: 50% 0%;
+                  transform-origin: 50% 0%;
+        }
+        100% {
+          -webkit-transform: scale(0.5);
+                  transform: scale(0.5);
+          -webkit-transform-origin: 50% 0%;
+                  transform-origin: 50% 0%;
+        }
+      }
+      
+      .derechos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .derechos {
+          -webkit-animation: derechos 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+                  animation: derechos 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+      }
+       @-webkit-keyframes derechos {
+        0% {
+          letter-spacing: -0.5em;
+          opacity: 0;
+        }
+        40% {
+          opacity: 0.6;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      @keyframes derechos {
+        0% {
+          letter-spacing: -0.5em;
+          opacity: 0;
+        }
+        40% {
+          opacity: 0.6;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+}

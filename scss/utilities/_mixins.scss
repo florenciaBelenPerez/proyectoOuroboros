@@ -1,0 +1,7 @@
+@mixin contenedor ($gap, $width, $max-width, $margin){ 
+      gap: $gap;
+      width: $width;
+      max-width: $max-width;
+      margin: $margin;
+    
+}

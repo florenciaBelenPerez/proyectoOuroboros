@@ -1,0 +1,14 @@
+
+@media screen and (min-width: 992px){
+    .contenedor .header{
+    grid-area: header;
+    font-family: $font-logo;
+    font-size: 30px;
+    font-weight: bold;
+    color: $blanco;
+    background-color: $negro;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+  }
