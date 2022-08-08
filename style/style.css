@@ -177,7 +177,15 @@
   .carousel-inner {
     background-color: #212529;
   }
+}
+@media screen and (min-width: 992px) {
+  .contenido {
+    grid-area: contenido;
+  }
   .imgHover:hover {
+    width: 100%;
+  }
+  .contCard:hover .imgHover {
     -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
     animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   }
@@ -200,11 +208,6 @@
       -webkit-transform: scale(1);
       transform: scale(1);
     }
-  }
-}
-@media screen and (min-width: 992px) {
-  .contenido {
-    grid-area: contenido;
   }
 }
 @media screen and (min-width: 600px) and (max-width: 992px) {
