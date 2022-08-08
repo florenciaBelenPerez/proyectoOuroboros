@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <meta name="keywords" content="ouroboros, magia, magia del caos, grant morrison, aleister crowley, carl jung, alan moore">
+    <meta name="description" content="Tu sitio web sobre magia del caos. Conocé todo acerca del mundo de las sombras, los sigils, rituales...¡y mucho más!">
+    <title>Ouroboros Home</title>
     <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="./style/style.css">
@@ -19,58 +21,62 @@
             <a href="./index.html" class="encabezado">OUROBOROS</a>
         </header>
         <main class="contenido">
-          <div>
-            <div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="false">
-              <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <div class="container">
+            <div class="card">
+              <div class="card-body">
+                <div id="miCarousel" class="carousel slider" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="miCarousel" data-bs-slide-to="0" class="active"> </button>
+                    <button type="button" data-bs-target="miCarousel" data-bs-slide-to="1"> </button>
+                    <button type="button" data-bs-target="miCarousel" data-bs-slide-to="2"> </button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">                     
+                        <img src="./images/Grant-Morrison-y-Batman-la-reconstruccion-de-un-icono-3.jpg" class="morrison" alt="">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>El Caos según Morrison</h5>
+                        <p>La conciencia mágica es una manera particular de ver y de interactuar con el mundo material. Personalmente experimento esto como algo que puedo describir solamente como un 'clic en la cabeza'</p>
+                        <a href="#" class="btn btn-dark">Leer más</a>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./images/aleister-crowley_679e40d7_800x800.jpg" class="crowley" alt="">
+                      <div class="carousel-caption d-none d-md-block">                       
+                        <h5>Aleister Crowley, el mago engro</h5>
+                        <p>Descubrí que poseía una capacidad mágica que formaba parte de mí...</p>
+                        <a href="#" class="btn btn-dark">Leer más</a>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                     <img src="./images/carl-jung.jpg" class="jung" alt="">
+                     <div class="carousel-caption d-none d-md-block">                      
+                       <h5>La sombra de Carl Jung</h5>
+                       <p>Si yo me preocupo por lo que está pasando en mi conciencia voy a evitar muchas situaciones negativas...</p>
+                       <a href="#" class="btn btn-dark">Leer más</a>
+                     </div>
+                   </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#miCarousel" data-bs-slide="prev">
+                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                   <span class="visually-hidden">Previous</span>
+                 </button>
+                 <button class="carousel-control-next" type="button" data-bs-target="#miCarousel" data-bs-slide="next">
+                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                   <span class="visually-hidden">Next</span>
+                 </button>
+                </div>
+ 
               </div>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="./images/01625150aed08b7af23e59c4a4c404a0c8ab18ear1-576-583v2_00.jpg" class="d-block w-100" height="576px" width="200px" alt="grant morrison">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5 class="bg-dark">La magia del Caos según Morrison</h5>
-                      <p class="card-text bg-body text-dark">La conciencia mágica es una manera particular de ver y de interactuar con el mundo material. Personalmente experimento esto como algo que puedo describir solamente como un 'clic en la cabeza'</p>
-                      <a href="#" class="btn btn-dark">Leer más</a>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <img src="./images/aleister-crowley_679e40d7_800x800.jpg" class="d-block w-100" height="576px" width="200px" alt="aleister crowley">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5 class="bg-dark">Aleister Crowley, el mago negro</h5>
-                    <p class="card-text bg-body text-dark">Descubrí que poseía una capacidad mágica que formaba parte de mí...</p>
-                    <a href="#" class="btn btn-dark">Leer más</a>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <img src="./images/carl-jung.jpg" class="d-block w-100" height="576px" width="350px" alt="carl jung">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5 class="bg-dark">La sombra de Carl Jung</h5>
-                    <p class="card-text bg-body text-dark">Si yo me preocupo por lo que está pasando en mi conciencia voy a evitar muchas situaciones negativas...</p>
-                    <a href="#" class="btn btn-dark">Leer más</a>
-                  </div>
-                </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
+ 
             </div>
-
+          </div>
            
-            </div>
-          
-  </main>
+   </main>
         <section class="logoDelProyecto"><img src="./images/ouroboros.png" alt="serpiente ouroboros vector"></img>
         </section>
         <aside class="sidebar"><nav class="barraDeNavegacion">
 
-          <nav class="navbar navbar-expand-lg bg-light">
+          <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -87,11 +93,11 @@
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Ver más
                     </a>
-                    <nav class="navbar bg-light nav flex-column">
+                    <nav class="navbar nav flex-column">
                       <div class="container-fluid">
                         <form class="d-flex nav flex-column" role="search">
                           <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                          <button class="btn btn-outline-dark" type="submit">Buscar</button>
+                          <button class="boton-buscar" type="submit">Buscar</button>
                         </form>
                       </div>
                     </nav>

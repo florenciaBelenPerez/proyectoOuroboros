@@ -1,6 +1,49 @@
 
 @media screen and (min-width: 992px){  
-    .carousel-inner{
-      background-color: $negro;
-    }
+  .carousel-item{
+    height: 50em;
+    width: 50em;
   }
+  .morrison{
+    height: 45em;
+    width: 70em;
+  }
+  .crowley{
+    height: 50em;
+    width: 60em;
+  }
+  .jung{
+    height: 60em;
+    width: 60em;
+  }
+  .carousel-caption{
+    
+    background: radial-gradient(circle, $gradiente-start 0%, $gradiente-end 100%);
+    color: $negro;
+  }
+ 
+}
+@media screen and (min-width: 600px) and (max-width: 992px){
+  .carousel-item{
+    height: 50em;
+    width: 30em;
+  }
+  .morrison{
+    height: 50em;
+    width: 50em;
+  }
+  .crowley{
+    height: 50em;
+    width: 55em;
+  }
+  .jung{
+    height: 60em;
+    width: 55em;
+  }
+  .carousel-caption{
+    
+    background: radial-gradient(circle, $gradiente-start 0%, $gradiente-end 100%);
+    color: $negro;
+  }
+  
+}

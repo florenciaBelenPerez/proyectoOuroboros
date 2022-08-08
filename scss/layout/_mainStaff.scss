@@ -1,0 +1,47 @@
+@media screen and (min-width: 992px){
+    .all-entry{
+        background: linear-gradient(to top right, $gradiente-start, $gradiente-end, $gradiente-start);
+        border: 0px;
+        border-radius: 5px;
+        margin-top: 25px;
+        color: $negro;
+        font-weight: bold;
+        transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
+        text-decoration: none;
+        padding: 5px;
+        &:hover{
+          cursor: pointer;
+          transform: translateY(-3px);
+          color: $blanco;
+        }
+        &:active{
+          transform: translateY(3px);
+        }
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 992px){
+    .all-entry{
+        background: linear-gradient(to top right, $gradiente-start, $gradiente-end, $gradiente-start);
+        border: 0px;
+        border-radius: 5px;
+        margin-top: 25px;
+        color: $negro;
+        font-weight: bold;
+        text-decoration: none;
+        padding: 5px;
+        
+    }
+}
+@media screen and (max-width: 600px){
+    .all-entry{
+        background: linear-gradient(to top right, $gradiente-start, $gradiente-end, $gradiente-start);
+        border: 0px;
+        border-radius: 5px;
+        margin-top: 25px;
+        color: $negro;
+        font-weight: bold;
+        text-decoration: none;
+        padding: 5px;
+        }
+    
+}

@@ -54,7 +54,44 @@
       p{
         font-family: $font-p;
       }
+      .navbar{
+        background-color: white;
+      }
+      .nav-link{
+        position: relative;
+        &:after{
+          content: "";
+          height: 2px;
+          position: absolute;
+          bottom: -2px;
+          left: 0;
+          right: 0;
+          background: linear-gradient(to top right, $gradiente-start, $gradiente-end, $gradiente-start);
+        }
+        &:hover{
+          background-image: linear-gradient(to top right, $gradiente-start, $gradiente-end, $gradiente-start);
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
 
+        }
+      }
+      .boton-buscar{
+        background: linear-gradient(to top right, $gradiente-start, $gradiente-end, $gradiente-start);
+        border: 0px;
+        border-radius: 5px;
+        margin-top: 25px;
+        color: white;
+        font-weight: bold;
+        transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
+        &:hover{
+          cursor: pointer;
+          transform: translateY(-3px);
+        }
+        &:active{
+          transform: translateY(3px);
+        }
+      }
 }
 
 @media screen and (min-width: 600px) and (max-width: 992px){
@@ -114,6 +151,30 @@
           p{
             font-family: 'Playfair Display', serif;
           }
+          .navbar{
+            background-color: white;
+          }
+          .nav-link{
+            position: relative;
+            &:after{
+              content: "";
+              height: 2px;
+              position: absolute;
+              bottom: -2px;
+              left: 0;
+              right: 0;
+              background: linear-gradient(to top right, $gradiente-start, $gradiente-end, $gradiente-start);
+            }
+           
+          }
+          .boton-buscar{
+            background: linear-gradient(to top right, $gradiente-start, $gradiente-end, $gradiente-start);
+            border: 0px;
+            border-radius: 5px;
+            margin-top: 25px;
+            color: white;
+            font-weight: bold;
+           }
 }
 
 @media screen and (max-width: 600px){
@@ -166,5 +227,27 @@
       
       p{
         font-family: $font-p;
+      }
+      .nav-link{
+        position: relative;
+        &:after{
+          content: "";
+          height: 2px;
+          position: absolute;
+          bottom: -2px;
+          left: 0;
+          right: 0;
+          background: linear-gradient(to top right, $gradiente-start, $gradiente-end, $gradiente-start);
+        }
+       
+      }
+      .boton-buscar{
+        background: linear-gradient(to top right, $gradiente-start, $gradiente-end, $gradiente-start);
+        border: 0px;
+        border-radius: 5px;
+        margin-top: 25px;
+        color: white;
+        font-weight: bold;
+        
       }
 }

@@ -5,35 +5,48 @@
     font-family: $font-logo;
     font-size: 30px;
     font-weight: bold;
-    color: $blanco;
-    background-color: $negro;
-    text-decoration: none;
+    background: linear-gradient(to top right, $gradiente-start, $gradiente-end);
     display: flex;
     justify-content: center;
+    a{
+      text-decoration: none;
+      color: $blanco;
+      &:hover{
+        background-image: linear-gradient(to top right, black, $negro);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+      }
+    }
 }
   }
   @media screen and (min-width: 600px) and (max-width: 992px){
     .contenedor .header{
     grid-area: header;
     font-family: $font-logo;
-    
     font-weight: bold;
-    color: $negro;
-    text-decoration: none;
+    background: linear-gradient(to top right, $gradiente-start, $gradiente-end);
     display: flex;
     justify-content: center;
-  }
+    a{
+      text-decoration: none;
+      color: $blanco;
+    }
 }
+  }
 
 @media screen and (max-width: 600px){
   .contenedor .header{
   grid-area: header;
   font-family: $font-logo;
-  
   font-weight: bold;
-  color: $negro;
-  text-decoration: none;
+  background: linear-gradient(to top right, $gradiente-start, $gradiente-end);
   display: flex;
   justify-content: center;
+  a{
+    text-decoration: none;
+    color: $blanco;
+  }
 }
 }

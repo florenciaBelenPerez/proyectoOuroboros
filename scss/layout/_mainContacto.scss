@@ -1,18 +1,66 @@
 @media screen and (min-width: 992px){
     article{
-    background-color: $negro;
-    color: $blanco;
+      .boton-formulario{
+        background: linear-gradient(to top right, $gradiente-start, $gradiente-end, $gradiente-start);
+        padding: 5px;
+        border: 0px;
+        border-radius: 5px;
+        margin-top: 25px;
+        color: $negro;
+        outline: 0;
+        transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
+  
+  &:hover{
+    cursor: pointer;
+    transform: translateY(-3px);
   }
+  a{
+    text-decoration: none;
+ } 
+}
+    }
 }
 @media screen and (min-width: 600px) and (max-width: 992px){
-    article{
-        background-color: $negro;
-        color: $blanco;
-      }
+  article{
+    .boton-formulario{
+      background: linear-gradient(to top right, $gradiente-start, $gradiente-end, $gradiente-start);
+      padding: 5px;
+      border: 0px;
+      border-radius: 5px;
+      margin-top: 25px;
+      color: $negro;
+      outline: 0;
+      transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
+
+&:hover{
+  cursor: pointer;
+  transform: translateY(-3px);
+}
+a{
+  text-decoration: none;
+} 
+}
+  }
 }
 @media screen and (max-width: 600px){
-    article{
-        background-color: $negro;
-        color: $blanco;
-      }
+  article{
+    .boton-formulario{
+      background: linear-gradient(to top right, $gradiente-start, $gradiente-end, $gradiente-start);
+      padding: 5px;
+      border: 0px;
+      border-radius: 5px;
+      margin-top: 25px;
+      color: $negro;
+      outline: 0;
+      transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
+
+&:hover{
+  cursor: pointer;
+  transform: translateY(-3px);
+}
+a{
+  text-decoration: none;
+} 
+}
+  }
 }
