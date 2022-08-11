@@ -423,6 +423,10 @@
   .imgHover:hover {
     width: 100%;
   }
+  img, svg {
+    overflow: hidden;
+    width: 100%;
+  }
   .contCard:hover .imgHover {
     -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
     animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
@@ -622,7 +626,22 @@
   .sigil {
     background: radial-gradient(circle, rgb(238, 174, 202) 0%, rgb(148, 187, 233) 100%);
     padding: 150px;
-    width: 100%;
+    width: 108%;
+  }
+  .gen {
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .resultado {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+  }
+  button, input, optgroup, select, textarea {
+    background-color: rgb(148, 187, 233);
+    font-family: "Tai Heritage Pro", serif;
   }
   .sigilGenerator {
     display: flex;
