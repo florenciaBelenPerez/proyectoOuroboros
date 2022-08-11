@@ -8,9 +8,16 @@
     background: linear-gradient(to top right, $gradiente-start, $gradiente-end);
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    text-decoration: none;
+    color: #084298;
+    .dropdown-item{
+      color:  $gradiente-start;
+    }
     a{
       text-decoration: none;
       color: $blanco;
+      
       &:hover{
         background-image: linear-gradient(to top right, black, $negro);
         -webkit-background-clip: text;
@@ -19,6 +26,20 @@
 
       }
     }
+    .nav-link{
+      font-size: 1rem;
+    }
+    
+}
+.encabezado{
+  font-size: 3rem;
+}
+.encabezadoP{
+  font-family: $font-logo;
+  font-size: 21px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
   }
   @media screen and (min-width: 600px) and (max-width: 992px){
@@ -29,10 +50,19 @@
     background: linear-gradient(to top right, $gradiente-start, $gradiente-end);
     display: flex;
     justify-content: center;
+    .dropdown-item{
+      color:  $gradiente-start;
+    }
     a{
       text-decoration: none;
       color: $blanco;
     }
+}
+.encabezado{
+  font-size: 3rem;
+}
+.encabezadoP{
+ display: none;
 }
   }
 
@@ -44,9 +74,15 @@
   background: linear-gradient(to top right, $gradiente-start, $gradiente-end);
   display: flex;
   justify-content: center;
+  .dropdown-item{
+    color:  $gradiente-start;
+  }
   a{
     text-decoration: none;
     color: $blanco;
   }
 }
+.encabezadoP{
+  display: none;
+ }
 }

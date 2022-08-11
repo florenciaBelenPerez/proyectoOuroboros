@@ -1,5 +1,22 @@
 @media screen and (min-width: 992px){
+
+    .contenedor.staff{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        grid-template-areas: 
+        "header header header header"
+        "contenido contenido contenido contenido"
+        "footer footer footer footer";
+    }
+    main>div{
+        display: flex;
+        justify-content: space-between;
+    }
+    
     .all-entry{
+        display: flex;
+        margin-bottom: 10px;
         background: linear-gradient(to top right, $gradiente-start, $gradiente-end, $gradiente-start);
         border: 0px;
         border-radius: 5px;
@@ -17,6 +34,13 @@
         &:active{
           transform: translateY(3px);
         }
+    }
+    .subtitulo{
+        margin-bottom: 20px;
+    }
+    .subtitulo .subtituloStaff{
+        display: inline-block;
+        margin-left: 500px;
     }
 }
 @media screen and (min-width: 600px) and (max-width: 992px){

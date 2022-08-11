@@ -13,6 +13,12 @@
     background: linear-gradient(to top right, rgb(238, 174, 202), rgb(148, 187, 233));
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    text-decoration: none;
+    color: #084298;
+  }
+  .contenedor .header .dropdown-item {
+    color: rgb(238, 174, 202);
   }
   .contenedor .header a {
     text-decoration: none;
@@ -24,6 +30,19 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+  .contenedor .header .nav-link {
+    font-size: 1rem;
+  }
+  .encabezado {
+    font-size: 3rem;
+  }
+  .encabezadoP {
+    font-family: "Cinzel Decorative", cursive;
+    font-size: 21px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 @media screen and (min-width: 600px) and (max-width: 992px) {
   .contenedor .header {
@@ -34,9 +53,18 @@
     display: flex;
     justify-content: center;
   }
+  .contenedor .header .dropdown-item {
+    color: rgb(238, 174, 202);
+  }
   .contenedor .header a {
     text-decoration: none;
     color: #f1f1f1;
+  }
+  .encabezado {
+    font-size: 3rem;
+  }
+  .encabezadoP {
+    display: none;
   }
 }
 @media screen and (max-width: 600px) {
@@ -48,9 +76,15 @@
     display: flex;
     justify-content: center;
   }
+  .contenedor .header .dropdown-item {
+    color: rgb(238, 174, 202);
+  }
   .contenedor .header a {
     text-decoration: none;
     color: #f1f1f1;
+  }
+  .encabezadoP {
+    display: none;
   }
 }
 @media screen and (min-width: 992px) {
@@ -93,17 +127,11 @@
     text-decoration: none;
     list-style: none;
   }
-  h2 {
-    text-align: center;
-  }
   .boton {
     margin-top: 5px;
   }
   p {
     font-family: "Playfair Display", serif;
-  }
-  .navbar {
-    background-color: white;
   }
   .nav-link {
     position: relative;
@@ -124,12 +152,14 @@
     -webkit-text-fill-color: transparent;
   }
   .boton-buscar {
-    background: linear-gradient(to top right, rgb(238, 174, 202), rgb(148, 187, 233), rgb(238, 174, 202));
+    background: linear-gradient(to top right, rgb(238, 174, 202), rgb(148, 187, 233));
+    font-family: "Tai Heritage Pro", serif;
     border: 0px;
     border-radius: 5px;
-    margin-top: 25px;
+    margin: 2px;
     color: white;
-    font-weight: bold;
+    margin-top: 0;
+    height: 2rem;
     transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
   }
   .boton-buscar:hover {
@@ -138,6 +168,34 @@
   }
   .boton-buscar:active {
     transform: translateY(3px);
+  }
+  .navFex {
+    flex-direction: row;
+  }
+  .flexPrinc {
+    width: 60%;
+    margin: 0 auto 0 0;
+    padding-left: 0;
+  }
+  .navbar-expand-lg .navbar-collapse {
+    width: 50% !important;
+  }
+  .form-control {
+    width: 60%;
+  }
+  .navbar-expand-lg .navbar-nav {
+    width: 100%;
+    justify-content: flex-start !important;
+  }
+  .navbar-expand-lg .navbar-nav li {
+    margin-right: 1rem;
+  }
+  .form-control {
+    height: 1rem;
+    padding: 1rem;
+  }
+  .d-flex {
+    align-items: center;
   }
 }
 @media screen and (min-width: 600px) and (max-width: 992px) {
@@ -172,17 +230,11 @@
     text-decoration: none;
     list-style: none;
   }
-  h2 {
-    text-align: center;
-  }
   .boton {
     margin-top: 5px;
   }
   p {
     font-family: "Playfair Display", serif;
-  }
-  .navbar {
-    background-color: white;
   }
   .nav-link {
     position: relative;
@@ -203,6 +255,34 @@
     margin-top: 25px;
     color: white;
     font-weight: bold;
+  }
+  .navFex {
+    flex-direction: row;
+  }
+  .flexPrinc {
+    width: 60%;
+    margin: 0 auto 0 0;
+    padding-left: 0;
+  }
+  .navbar-expand-lg .navbar-collapse {
+    width: 50% !important;
+  }
+  .form-control {
+    width: 60%;
+  }
+  .navbar-expand-lg .navbar-nav {
+    width: 100%;
+    justify-content: flex-start !important;
+  }
+  .navbar-expand-lg .navbar-nav li {
+    margin-right: 1rem;
+  }
+  .form-control {
+    height: 1rem;
+    padding: 1rem;
+  }
+  .d-flex {
+    align-items: center;
   }
 }
 @media screen and (max-width: 600px) {
@@ -237,9 +317,6 @@
     text-decoration: none;
     list-style: none;
   }
-  h2 {
-    text-align: center;
-  }
   .boton {
     margin-top: 5px;
   }
@@ -265,6 +342,34 @@
     margin-top: 25px;
     color: white;
     font-weight: bold;
+  }
+  .navFex {
+    flex-direction: row;
+  }
+  .flexPrinc {
+    width: 60%;
+    margin: 0 auto 0 0;
+    padding-left: 0;
+  }
+  .navbar-expand-lg .navbar-collapse {
+    width: 50% !important;
+  }
+  .form-control {
+    width: 60%;
+  }
+  .navbar-expand-lg .navbar-nav {
+    width: 100%;
+    justify-content: flex-start !important;
+  }
+  .navbar-expand-lg .navbar-nav li {
+    margin-right: 1rem;
+  }
+  .form-control {
+    height: 1rem;
+    padding: 1rem;
+  }
+  .d-flex {
+    align-items: center;
   }
 }
 @media screen and (min-width: 992px) {
@@ -393,7 +498,19 @@
   }
 }
 @media screen and (min-width: 992px) {
+  .contenedor.staff {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    grid-template-areas: "header header header header" "contenido contenido contenido contenido" "footer footer footer footer";
+  }
+  main > div {
+    display: flex;
+    justify-content: space-between;
+  }
   .all-entry {
+    display: flex;
+    margin-bottom: 10px;
     background: linear-gradient(to top right, rgb(238, 174, 202), rgb(148, 187, 233), rgb(238, 174, 202));
     border: 0px;
     border-radius: 5px;
@@ -411,6 +528,13 @@
   }
   .all-entry:active {
     transform: translateY(3px);
+  }
+  .subtitulo {
+    margin-bottom: 20px;
+  }
+  .subtitulo .subtituloStaff {
+    display: inline-block;
+    margin-left: 500px;
   }
 }
 @media screen and (min-width: 600px) and (max-width: 992px) {
@@ -498,6 +622,7 @@
   .sigil {
     background: radial-gradient(circle, rgb(238, 174, 202) 0%, rgb(148, 187, 233) 100%);
     padding: 150px;
+    width: 100%;
   }
   .sigilGenerator {
     display: flex;
@@ -514,6 +639,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .gen {
+    margin-bottom: 40px;
+  }
+  .mb-3 {
+    display: flex;
+    flex-direction: column;
   }
 }
 @media screen and (max-width: 600px) {

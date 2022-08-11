@@ -2,6 +2,7 @@
     .sigil{
   background: radial-gradient(circle, $gradiente-start 0%, $gradiente-end 100%);
   padding: 150px;
+  width: 100%;
   }
   .sigilGenerator{
     display: flex;
@@ -13,6 +14,7 @@
 @media screen and (min-width: 600px) and (max-width: 992px){
   .contenedor .sigil{
   background: radial-gradient(circle, $gradiente-start 0%, $gradiente-end 100%);
+  
   }
 
   .sigilGenerator{
@@ -20,6 +22,14 @@
     align-items: center;
     justify-content: center;
   
+  }
+  .gen{
+    margin-bottom: 40px;
+  }
+
+  .mb-3{
+    display: flex;
+    flex-direction: column;
   }
   
 }

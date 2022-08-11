@@ -5,7 +5,8 @@
   .imgHover:hover{
     width: 100%;
   }
-  .contCard:hover .imgHover{
+  .contCard{
+  &:hover .imgHover{
     -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
             animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
   
@@ -29,6 +30,7 @@
     -webkit-transform: scale(1);
             transform: scale(1);
   }
+}
 }
 .boton-leer-mas{
   background: linear-gradient(to top right, $gradiente-start, $gradiente-end, $gradiente-start);

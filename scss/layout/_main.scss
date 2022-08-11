@@ -43,9 +43,7 @@
         list-style: none;
 }
        }
-       h2{
-        text-align: center;
-      }
+       
       
       .boton{
         margin-top: 5px;
@@ -54,9 +52,7 @@
       p{
         font-family: $font-p;
       }
-      .navbar{
-        background-color: white;
-      }
+      
       .nav-link{
         position: relative;
         &:after{
@@ -77,12 +73,14 @@
         }
       }
       .boton-buscar{
-        background: linear-gradient(to top right, $gradiente-start, $gradiente-end, $gradiente-start);
+        background: linear-gradient(to top right, $gradiente-start, $gradiente-end);
+        font-family: $font-footer;
         border: 0px;
         border-radius: 5px;
-        margin-top: 25px;
+        margin: 2px;
         color: white;
-        font-weight: bold;
+        margin-top: 0;
+        height: 2rem;
         transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
         &:hover{
           cursor: pointer;
@@ -92,6 +90,41 @@
           transform: translateY(3px);
         }
       }
+    
+
+      .navFex{
+        flex-direction: row;
+      }
+      .flexPrinc{
+        width: 60%;
+        margin: 0 auto 0 0;
+        padding-left: 0;
+      }
+      .navbar-expand-lg .navbar-collapse{
+        width: 50%!important;
+      }
+      .form-control{
+       width: 60%;
+      }
+      .navbar-expand-lg .navbar-nav{
+        width: 100%;
+        justify-content: flex-start!important;
+      }
+      .navbar-expand-lg .navbar-nav li{
+        margin-right: 1rem;
+      }
+     .form-control-uno{
+      
+     }
+      .form-control{
+        height: 1rem;
+        padding: 1rem;
+     }
+     
+      .d-flex{
+        align-items: center;
+      }
+      
 }
 
 @media screen and (min-width: 600px) and (max-width: 992px){
@@ -138,11 +171,7 @@
         
     }
 }
-
-          h2{
-            text-align: center;
-          }
-        
+   
           
           .boton{
             margin-top: 5px;
@@ -151,9 +180,7 @@
           p{
             font-family: 'Playfair Display', serif;
           }
-          .navbar{
-            background-color: white;
-          }
+          
           .nav-link{
             position: relative;
             &:after{
@@ -175,6 +202,34 @@
             color: white;
             font-weight: bold;
            }
+           .navFex{
+            flex-direction: row;
+          }
+          .flexPrinc{
+            width: 60%;
+            margin: 0 auto 0 0;
+            padding-left: 0;
+          }
+          .navbar-expand-lg .navbar-collapse{
+            width: 50%!important;
+          }
+          .form-control{
+           width: 60%;
+          }
+          .navbar-expand-lg .navbar-nav{
+            width: 100%;
+            justify-content: flex-start!important;
+          }
+          .navbar-expand-lg .navbar-nav li{
+            margin-right: 1rem;
+          }
+          .form-control{
+            height: 1rem;
+            padding: 1rem;
+          }
+          .d-flex{
+            align-items: center;
+          }
 }
 
 @media screen and (max-width: 600px){
@@ -217,9 +272,7 @@
         list-style: none;
       }
     }
-    h2{
-        text-align: center;
-      }
+    
       
       .boton{
         margin-top: 5px;
@@ -249,5 +302,33 @@
         color: white;
         font-weight: bold;
         
+      }
+      .navFex{
+        flex-direction: row;
+      }
+      .flexPrinc{
+        width: 60%;
+        margin: 0 auto 0 0;
+        padding-left: 0;
+      }
+      .navbar-expand-lg .navbar-collapse{
+        width: 50%!important;
+      }
+      .form-control{
+       width: 60%;
+      }
+      .navbar-expand-lg .navbar-nav{
+        width: 100%;
+        justify-content: flex-start!important;
+      }
+      .navbar-expand-lg .navbar-nav li{
+        margin-right: 1rem;
+      }
+      .form-control{
+        height: 1rem;
+        padding: 1rem;
+      }
+      .d-flex{
+        align-items: center;
       }
 }
