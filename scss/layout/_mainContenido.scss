@@ -4,11 +4,10 @@
   }
   .imgHover:hover{
     width: 100%;
-  }
-  img, svg {
     overflow: hidden;
     width: 100%;
-}
+  }
+  
   .contCard{
   &:hover .imgHover{
     -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;

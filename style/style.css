@@ -422,8 +422,6 @@
   }
   .imgHover:hover {
     width: 100%;
-  }
-  img, svg {
     overflow: hidden;
     width: 100%;
   }
