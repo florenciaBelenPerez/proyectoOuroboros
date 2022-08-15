@@ -6,7 +6,7 @@
       color: $negro;
       @include contenedor (20px, 90%, 1280px, 20px auto);
       grid-template-areas: "header header header header"
-                           "contenido contenido logoDelProyecto sidebar"
+                           "contenido contenido contenido logoDelProyecto"
                            "footer footer footer footer";
                            
     
@@ -15,10 +15,12 @@
         border-radius: 4px;
         }
 
-      .logoDelProyecto img{
+      .logoDelProyecto{
         grid-area: logoDelProyecto;  
-        margin-top: 350px;  
-        height: 250px;  
+        width: auto;
+        display: flex;
+        height: 250px; 
+        margin-top: 250px; 
         animation-name: logo;  
         transition: all 3s ease-in-out;
            
@@ -29,22 +31,10 @@
             }
           }
     }
-       .sidebar{
-        grid-area: sidebar;
-        text-align: center;
-        justify-content: center;
-        display: flex;
-        align-items: center;    
-        min-width: 15px;
-        font-family: $font-footer;
-
-        ul li{
-        text-decoration: none;
-        list-style: none;
-}
-       }
+    .contenido{
+      display: flex;
+    }
        
-      
       .boton{
         margin-top: 5px;
       }
@@ -151,25 +141,7 @@
         .contenedor .logoDelProyecto img{
             display: none;
         }
-          
-          
-            .sidebar{
-            grid-area: sidebar;
-            text-align: center;
-            justify-content: center;
-            display: flex;
-            align-items: center;    
-            min-width: 15px;
-            font-family: 'Tai Heritage Pro', serif;
-          
         
-          
-          ul li{
-            text-decoration: none;
-            list-style: none;
-          
-        
-    }
 }
    
           
@@ -193,7 +165,7 @@
               background: linear-gradient(to top right, $gradiente-start, $gradiente-end, $gradiente-start);
             }
            
-          }
+          
           .boton-buscar{
             background: linear-gradient(to top right, $gradiente-start, $gradiente-end, $gradiente-start);
             border: 0px;
@@ -230,7 +202,7 @@
           .d-flex{
             align-items: center;
           }
-}
+        }   
 
 @media screen and (max-width: 600px){
 
@@ -258,22 +230,6 @@
         display: none;
     } 
         
-      
-     .sidebar{
-        grid-area: sidebar;
-        text-align: center;
-        justify-content: center;
-        display: flex;
-        align-items: center;    
-        min-width: 15px;
-        font-family: $font-footer;
-      ul li{
-        text-decoration: none;
-        list-style: none;
-      }
-    }
-    
-      
       .boton{
         margin-top: 5px;
       }

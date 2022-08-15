@@ -14,18 +14,23 @@
         justify-content: space-between;
     }
     
-    .all-entry{
+    .all-entry a{
         display: flex;
+        flex-direction: column;
         margin-bottom: 10px;
+        margin-top: 0px;
         background: linear-gradient(to top right, $gradiente-start, $gradiente-end, $gradiente-start);
         border: 0px;
         border-radius: 5px;
-        margin-top: 25px;
         color: $negro;
         font-weight: bold;
         transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
         text-decoration: none;
         padding: 5px;
+        a{
+            text-decoration: none;
+            color: $negro;
+        }
         &:hover{
           cursor: pointer;
           transform: translateY(-3px);

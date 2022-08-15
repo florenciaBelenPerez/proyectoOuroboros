@@ -5,8 +5,14 @@
         color: black;
         font-family: $font-footer
       }
+      .redesSociales{
+        list-style: none;
+        text-decoration: none;
+      }
       
-      .fb:hover{
+      .fb{
+        width: 30px;
+      &:hover{
         -webkit-animation: scale-down-top 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         animation: scale-down-top 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
       
@@ -39,8 +45,11 @@
                   transform-origin: 50% 0%;
         }
       }
+    }
       
-      .tw:hover{
+      .tw{
+        width: 30px;
+      &:hover{
         -webkit-animation: scale-down-top 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         animation: scale-down-top 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
       
@@ -73,8 +82,10 @@
                   transform-origin: 50% 0%;
         }
       }
-      
-      .yt:hover{
+    }
+      .yt{
+        width: 30px;
+      &:hover{
         -webkit-animation: scale-down-top 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         animation: scale-down-top 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
       
@@ -107,6 +118,7 @@
                   transform-origin: 50% 0%;
         }
       }
+    }
       
       .derechos{
         display: flex;

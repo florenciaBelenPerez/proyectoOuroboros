@@ -21,6 +21,11 @@
     background: radial-gradient(circle, $gradiente-start 0%, $gradiente-end 100%);
     color: $negro;
   }
+
+  img, svg{
+    width: 100%;
+    overflow: none;
+  }
  
 }
 @media screen and (min-width: 600px) and (max-width: 992px){

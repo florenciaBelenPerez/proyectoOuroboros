@@ -9,6 +9,8 @@
   }
   
   .contCard{
+    width: auto;
+    overflow: none;
   &:hover .imgHover{
     -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
             animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
@@ -54,6 +56,23 @@
     transform: translateY(3px);
   }
 }
+
+.area-contenido{
+  display: flex;
+  flex-direction: column;
+}
+.aC1{
+  display: flex;
+
+}
+
+.pagination{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  
+}
+
 }
 @media screen and (min-width: 600px) and (max-width: 992px){
   .contenedor .contenido{
