@@ -1,12 +1,16 @@
 @media screen and (min-width: 992px){
-    .contenedor{
+  ::selection { 
+    background: $gradiente-start;
+    color:$negro;  
+}
+      .contenedor{
       display: grid;
       grid-template-columns: repeat(1 fr, 1fr, 0.75fr, 0.5fr);
       grid-auto-rows: repeat(4, auto);
       color: $negro;
       @include contenedor (20px, 90%, 1280px, 20px auto);
       grid-template-areas: "header header header header"
-                           "contenido contenido contenido logoDelProyecto"
+                           "contenido contenido contenido contenido"
                            "footer footer footer footer";
                            
     

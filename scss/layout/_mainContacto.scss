@@ -1,4 +1,10 @@
 @media screen and (min-width: 992px){
+  .contacto{
+    grid-template-areas: 
+        "header header header header"
+        "contenido contenido contenido contenido"
+        "footer footer footer footer";
+  }
     article{
       .boton-formulario{
         background: linear-gradient(to top right, $gradiente-start, $gradiente-end, $gradiente-start);

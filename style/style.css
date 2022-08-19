@@ -88,6 +88,10 @@
   }
 }
 @media screen and (min-width: 992px) {
+  ::selection {
+    background: rgb(238, 174, 202);
+    color: #212529;
+  }
   .contenedor {
     display: grid;
     grid-template-columns: repeat(1 fr, 1fr, 0.75fr, 0.5fr);
@@ -97,7 +101,7 @@
     width: 90%;
     max-width: 1280px;
     margin: 20px auto;
-    grid-template-areas: "header header header header" "contenido contenido contenido logoDelProyecto" "footer footer footer footer";
+    grid-template-areas: "header header header header" "contenido contenido contenido contenido" "footer footer footer footer";
   }
   .contenedor .contenedor div, .contenedor .header, .contenedor .contenido, .contenedor .sidebar, .contenedor .footer {
     padding: 20px;
@@ -390,17 +394,21 @@ p {
   }
 }
 @media screen and (min-width: 992px) {
-  .contenido {
+  .contenido .area-contenido {
     grid-area: contenido;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    grid-template-areas: "header header header header" "contenido contenido contenido contenido" "footer footer footer footer";
   }
   .imgHover:hover {
-    width: 100%;
-    overflow: hidden;
-    width: 100%;
+    width: auto;
+    height: 100%;
   }
   .contCard {
     width: auto;
-    overflow: none;
+    overflow: hidden;
+    height: 250px;
   }
   .contCard:hover .imgHover {
     -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
@@ -445,12 +453,9 @@ p {
   .boton-leer-mas:active {
     transform: translateY(3px);
   }
-  .area-contenido {
-    display: flex;
-    flex-direction: column;
-  }
   .aC1 {
     display: flex;
+    justify-content: space-between;
   }
   .pagination {
     display: flex;
@@ -558,6 +563,9 @@ p {
   }
 }
 @media screen and (min-width: 992px) {
+  .contacto {
+    grid-template-areas: "header header header header" "contenido contenido contenido contenido" "footer footer footer footer";
+  }
   article .boton-formulario {
     background: linear-gradient(to top right, rgb(238, 174, 202), rgb(148, 187, 233), rgb(238, 174, 202));
     padding: 5px;
@@ -619,6 +627,7 @@ p {
     background: radial-gradient(circle, rgb(238, 174, 202) 0%, rgb(148, 187, 233) 100%);
     padding: 150px;
     width: 108%;
+    grid-template-areas: "header header header header" "contenido contenido contenido contenido" "footer footer footer footer";
   }
   .gen {
     margin-bottom: 100px;
@@ -672,6 +681,7 @@ p {
 }
 @media screen and (min-width: 992px) {
   .footer {
+    background: linear-gradient(to top right, rgb(238, 174, 202), rgb(148, 187, 233));
     grid-area: footer;
     padding-left: 45px;
     color: black;

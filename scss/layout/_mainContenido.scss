@@ -1,16 +1,23 @@
 @media screen and (min-width: 992px){
-  .contenido{
+  .contenido .area-contenido{
     grid-area: contenido;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    grid-template-areas: 
+    "header header header header"
+    "contenido contenido contenido contenido"
+    "footer footer footer footer";
   }
   .imgHover:hover{
-    width: 100%;
-    overflow: hidden;
-    width: 100%;
+    width: auto;
+    height: 100%;
   }
   
   .contCard{
     width: auto;
-    overflow: none;
+    overflow: hidden;
+    height: 250px;
   &:hover .imgHover{
     -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
             animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
@@ -57,12 +64,10 @@
   }
 }
 
-.area-contenido{
-  display: flex;
-  flex-direction: column;
-}
+
 .aC1{
   display: flex;
+  justify-content: space-between;
 
 }
 

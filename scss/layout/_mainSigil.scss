@@ -3,6 +3,10 @@
   background: radial-gradient(circle, $gradiente-start 0%, $gradiente-end 100%);
   padding: 150px;
   width: 108%;
+  grid-template-areas: 
+        "header header header header"
+        "contenido contenido contenido contenido"
+        "footer footer footer footer";
   }
   .gen{
     margin-bottom: 100px;
