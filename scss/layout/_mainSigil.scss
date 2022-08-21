@@ -1,8 +1,9 @@
 @media screen and (min-width: 992px){
-  .sigil{
+  
+    .sigil{
   background: radial-gradient(circle, $gradiente-start 0%, $gradiente-end 100%);
   padding: 150px;
-  width: 108%;
+  grid-area: contenido;
   grid-template-areas: 
         "header header header header"
         "contenido contenido contenido contenido"
@@ -24,11 +25,13 @@ button, input, optgroup, select, textarea {
     background-color: $gradiente-end ;
     font-family: $font-footer;
   }
+  
   .sigilGenerator{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: auto;
+    height: 70vh;
+    width: auto;
   }
 }
 @media screen and (min-width: 600px) and (max-width: 992px){
@@ -41,6 +44,7 @@ button, input, optgroup, select, textarea {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: auto;
   
   }
   .gen{

@@ -26,7 +26,6 @@
         font-weight: bold;
         transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
         text-decoration: none;
-        padding: 5px;
         a{
             text-decoration: none;
             color: $negro;
@@ -52,12 +51,14 @@
     .all-entry{
         background: linear-gradient(to top right, $gradiente-start, $gradiente-end, $gradiente-start);
         border: 0px;
-        border-radius: 5px;
         margin-top: 25px;
         color: $negro;
         font-weight: bold;
         text-decoration: none;
-        padding: 5px;
+        a{
+            text-decoration: none;
+        color: $negro;        
+    }
         
     }
 }
@@ -65,12 +66,14 @@
     .all-entry{
         background: linear-gradient(to top right, $gradiente-start, $gradiente-end, $gradiente-start);
         border: 0px;
-        border-radius: 5px;
         margin-top: 25px;
         color: $negro;
         font-weight: bold;
         text-decoration: none;
-        padding: 5px;
+        a{
+            text-decoration: none;
+            color: $negro;
+        }
         }
     
 }

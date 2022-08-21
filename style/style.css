@@ -104,7 +104,7 @@
     grid-template-areas: "header header header header" "contenido contenido contenido contenido" "footer footer footer footer";
   }
   .contenedor .contenedor div, .contenedor .header, .contenedor .contenido, .contenedor .sidebar, .contenedor .footer {
-    padding: 20px;
+    padding: 0px;
     border-radius: 4px;
   }
   .contenedor .logoDelProyecto {
@@ -207,7 +207,7 @@
     grid-template-areas: "header" "contenido" "sidebar" "footer";
   }
   .contenedor div, .header, .contenido, .sidebar, .footer {
-    padding: 20px;
+    padding: 0px;
     border-radius: 4px;
   }
   .contenedor .logoDelProyecto img {
@@ -276,7 +276,6 @@ p {
     display: grid;
     grid-template-columns: repeat(1 fr, 1fr);
     grid-auto-rows: repeat(4, auto);
-    gap: 20px;
     width: 90%;
     color: #212529;
     max-width: 1280px;
@@ -284,7 +283,7 @@ p {
     grid-template-areas: "header" "contenido" "sidebar" "footer";
   }
   .contenedor div, .header, .contenido, .sidebar, .footer {
-    padding: 20px;
+    padding: 0px;
     border-radius: 4px;
   }
   .contenedor .logoDelProyecto img {
@@ -394,25 +393,21 @@ p {
   }
 }
 @media screen and (min-width: 992px) {
-  .contenido .area-contenido {
+  .area-contenido {
     grid-area: contenido;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     grid-template-areas: "header header header header" "contenido contenido contenido contenido" "footer footer footer footer";
   }
+  .imgHover {
+    object-fit: cover;
+    height: 100%;
+    transition: all 0.5s;
+  }
   .imgHover:hover {
     width: auto;
     height: 100%;
-  }
-  .contCard {
-    width: auto;
-    overflow: hidden;
-    height: 250px;
-  }
-  .contCard:hover .imgHover {
-    -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-    animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   }
   @-webkit-keyframes scale-up-center {
     0% {
@@ -434,8 +429,23 @@ p {
       transform: scale(1);
     }
   }
+  .contCard {
+    padding: 0;
+  }
+  .contCard:hover .imgHover {
+    transform: scale(1.3);
+  }
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .contenedor .header .dropdown-item {
+    text-shadow: 1px 1px black;
+  }
   .boton-leer-mas {
     background: linear-gradient(to top right, rgb(238, 174, 202), rgb(148, 187, 233), rgb(238, 174, 202));
+    text-align: center;
     border: 0px;
     border-radius: 5px;
     margin-top: 25px;
@@ -467,6 +477,14 @@ p {
   .contenedor .contenido {
     grid-area: contenido;
   }
+  .contCard {
+    padding: 0;
+  }
+  .imgHover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
   .boton-leer-mas {
     background: linear-gradient(to top right, rgb(238, 174, 202), rgb(148, 187, 233), rgb(238, 174, 202));
     border: 0px;
@@ -481,6 +499,9 @@ p {
 @media screen and (max-width: 600px) {
   .contenedor .contenido {
     grid-area: contenido;
+  }
+  .contCard {
+    padding: 0;
   }
   .boton-leer-mas {
     background: linear-gradient(to top right, rgb(238, 174, 202), rgb(148, 187, 233), rgb(238, 174, 202));
@@ -516,7 +537,6 @@ p {
     font-weight: bold;
     transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
     text-decoration: none;
-    padding: 5px;
   }
   .all-entry a a {
     text-decoration: none;
@@ -542,24 +562,28 @@ p {
   .all-entry {
     background: linear-gradient(to top right, rgb(238, 174, 202), rgb(148, 187, 233), rgb(238, 174, 202));
     border: 0px;
-    border-radius: 5px;
     margin-top: 25px;
     color: #212529;
     font-weight: bold;
     text-decoration: none;
-    padding: 5px;
+  }
+  .all-entry a {
+    text-decoration: none;
+    color: #212529;
   }
 }
 @media screen and (max-width: 600px) {
   .all-entry {
     background: linear-gradient(to top right, rgb(238, 174, 202), rgb(148, 187, 233), rgb(238, 174, 202));
     border: 0px;
-    border-radius: 5px;
     margin-top: 25px;
     color: #212529;
     font-weight: bold;
     text-decoration: none;
-    padding: 5px;
+  }
+  .all-entry a {
+    text-decoration: none;
+    color: #212529;
   }
 }
 @media screen and (min-width: 992px) {
@@ -626,7 +650,7 @@ p {
   .sigil {
     background: radial-gradient(circle, rgb(238, 174, 202) 0%, rgb(148, 187, 233) 100%);
     padding: 150px;
-    width: 108%;
+    grid-area: contenido;
     grid-template-areas: "header header header header" "contenido contenido contenido contenido" "footer footer footer footer";
   }
   .gen {
@@ -648,7 +672,8 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: auto;
+    height: 70vh;
+    width: auto;
   }
 }
 @media screen and (min-width: 600px) and (max-width: 992px) {
@@ -659,6 +684,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: auto;
   }
   .gen {
     margin-bottom: 40px;

@@ -15,7 +15,7 @@
                            
     
         .contenedor div, .header, .contenido, .sidebar, .footer{    
-        padding: 20px;
+        padding: 0px;
         border-radius: 4px;
         }
 
@@ -107,9 +107,6 @@
       .navbar-expand-lg .navbar-nav li{
         margin-right: 1rem;
       }
-     .form-control-uno{
-      
-     }
       .form-control{
         height: 1rem;
         padding: 1rem;
@@ -139,7 +136,7 @@
                            
     }
     .contenedor div, .header, .contenido, .sidebar, .footer{    
-        padding: 20px;
+        padding: 0px;
         border-radius: 4px;
         }
         .contenedor .logoDelProyecto img{
@@ -214,7 +211,6 @@
       display: grid;
       grid-template-columns: repeat(1 fr, 1fr);
       grid-auto-rows: repeat(4, auto);
-      gap: 20px;
       width: 90%;
       color: $negro;
       max-width: 1280px;
@@ -227,7 +223,7 @@
     }
 
     .contenedor div, .header, .contenido, .sidebar, .footer{    
-    padding: 20px;
+    padding: 0px;
     border-radius: 4px;
     }
     .contenedor .logoDelProyecto img{
