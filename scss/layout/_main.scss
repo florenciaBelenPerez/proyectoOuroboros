@@ -136,14 +136,14 @@
                            
     }
     .contenedor div, .header, .contenido, .sidebar, .footer{    
-        padding: 0px;
+        
         border-radius: 4px;
         }
         .contenedor .logoDelProyecto img{
             display: none;
         }
         
-}
+
    
           
           .boton{
@@ -153,6 +153,18 @@
           p{
             font-family: 'Playfair Display', serif;
           }
+
+          .boton-buscar{
+            background: linear-gradient(to top right, $gradiente-start, $gradiente-end);
+            font-family: $font-footer;
+            border: 0px;
+            border-radius: 5px;
+            margin: 2px;
+            color: white;
+            margin-top: 0;
+            height: 2rem;
+            
+         }
           
           .nav-link{
             position: relative;
@@ -167,14 +179,7 @@
             }
            
           
-          .boton-buscar{
-            background: linear-gradient(to top right, $gradiente-start, $gradiente-end, $gradiente-start);
-            border: 0px;
-            border-radius: 5px;
-            margin-top: 25px;
-            color: white;
-            font-weight: bold;
-           }
+           
            .navFex{
             flex-direction: row;
           }
@@ -204,6 +209,7 @@
             align-items: center;
           }
         }   
+      }
 
 @media screen and (max-width: 600px){
 
@@ -223,7 +229,7 @@
     }
 
     .contenedor div, .header, .contenido, .sidebar, .footer{    
-    padding: 0px;
+    
     border-radius: 4px;
     }
     .contenedor .logoDelProyecto img{
@@ -236,6 +242,16 @@
       
       p{
         font-family: $font-p;
+      }
+      .boton-buscar{
+        background: linear-gradient(to top right, $gradiente-start, $gradiente-end, $gradiente-start);
+        border: 0px;
+        border-radius: 5px;
+        margin-top: 25px;
+        color: white;
+        font-weight: bold;
+    
+        
       }
       .nav-link{
         position: relative;
@@ -250,15 +266,7 @@
         }
        
       }
-      .boton-buscar{
-        background: linear-gradient(to top right, $gradiente-start, $gradiente-end, $gradiente-start);
-        border: 0px;
-        border-radius: 5px;
-        margin-top: 25px;
-        color: white;
-        font-weight: bold;
-        
-      }
+      
       .navFex{
         flex-direction: row;
       }

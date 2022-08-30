@@ -24,7 +24,7 @@
 
   img, svg{
     width: 100%;
-    overflow: none;
+    overflow: hidden;
   }
  
 }
@@ -50,5 +50,35 @@
     background: radial-gradient(circle, $gradiente-start 0%, $gradiente-end 100%);
     color: $negro;
   }
+  .bienvenido{
+    display: none; 
+  }
   
+}
+
+@media screen and (max-width: 600px){
+  .carousel-item{
+    height: 50em;
+    width: 30em;
+  }
+  .morrison{
+    height: 50em;
+    width: 50em;
+  }
+  .crowley{
+    height: 50em;
+    width: 55em;
+  }
+  .jung{
+    height: 60em;
+    width: 55em;
+  }
+  .carousel-caption{
+    
+    background: radial-gradient(circle, $gradiente-start 0%, $gradiente-end 100%);
+    color: $negro;
+  }
+  .bienvenido{
+    display: none; 
+  }
 }
